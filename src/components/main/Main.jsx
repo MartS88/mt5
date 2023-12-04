@@ -4,8 +4,8 @@ import {useMediaQuery} from "react-responsive";
 import {scrollToElement} from "../utils/scrollUtils";
 
 const Main = () => {
-    const isMobile = useMediaQuery({maxWidth: 765});
 
+    const isMobile = useMediaQuery({maxWidth: 765});
     const [sliderValue, setSliderValue] = useState(250);
     const [profit, setProfit] = useState(312)
     const handleChange = (e) => {

@@ -417,6 +417,7 @@ header {
     gap: 40px;
 
     &::after {
+
       position: absolute;
       background: url('../../assets/mobile_background.png') center/cover no-repeat;
       width: 355px;

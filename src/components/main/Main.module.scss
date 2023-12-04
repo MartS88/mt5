@@ -570,6 +570,22 @@ main {
     position: relative;
     padding: 16px;
 
+    &::before {
+
+      position: absolute;
+      background: url('../../assets/ellipse508.png') center/cover no-repeat;
+      width: 150%!important;
+      height: 100%!important;
+      content: '';
+      top: -141.5%!important;
+      left: -52%!important;
+      border-radius: 32px;
+      transform: rotate(0deg);
+      z-index: -1;
+      pointer-events: none;
+      border-radius: 32px;
+      background-clip: content-box;
+    }
 
     &::after {
 
