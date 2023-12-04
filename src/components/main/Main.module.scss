@@ -652,8 +652,9 @@ main {
     }
 
     .withdraw_bonus_wrapped {
-      transform: translateX(-4%);
-      width: 360px!important;
+
+      transform: translateX(-2%);
+      width: 350px !important;
       display: flex;
       flex-direction: column!important;
       align-items: flex-start!important;

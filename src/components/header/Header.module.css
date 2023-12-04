@@ -152,7 +152,7 @@ header .line_block {
 header .line_block::before {
   position: absolute;
   background: url("../../assets/ellipse508.png") center/cover no-repeat;
-  width: 100%;
+  width: 50%;
   height: 100%;
   content: "";
   top: 0;
@@ -478,6 +478,7 @@ header .line_block .line_mid_block_wrapped .line_mid_block .you_invest .mid_bloc
     position: relative;
   }
   header .line_block::before {
+    visibility: hidden;
     position: absolute;
     background: url("../../assets/ellipse508.png") center/cover no-repeat;
     width: 1097px;

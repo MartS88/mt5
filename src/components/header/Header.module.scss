@@ -176,7 +176,7 @@ header {
 
       position: absolute;
       background: url('../../assets/ellipse508.png') center/cover no-repeat;
-      width: 100%;
+      width: 50%;
       height: 100%;
       content: '';
       top: 0;
@@ -563,7 +563,7 @@ header {
       position: relative;
 
       &::before {
-
+        visibility: hidden;
         position: absolute;
         background: url('../../assets/ellipse508.png') center/cover no-repeat;
         width: 1097px;
