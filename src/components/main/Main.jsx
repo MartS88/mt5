@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import s from './Main.module.scss'
 import {useMediaQuery} from "react-responsive";
-
+import {scrollToElement} from "../utils/scrollUtils";
 
 const Main = () => {
     const isMobile = useMediaQuery({maxWidth: 765});
@@ -20,6 +20,7 @@ const Main = () => {
         return {background: color};
 
     };
+
     return (
         <main>
 
@@ -80,7 +81,7 @@ const Main = () => {
 
                         <div className={s.you_invest}>
 
-                            <span className={s.mid_block_div_investment}>You investment</span>
+                            <span className={s.mid_block_div_investment}>Deposit amount</span>
 
                             <span className={s.mid_block_div_investment}>${sliderValue}</span>
 
@@ -126,7 +127,6 @@ const Main = () => {
                         </div>
                     </div>
 
-
                     <div className={s.withdraw_about_block}>
 
                         <span className={s.withdraw_about_block_span}>
@@ -139,10 +139,13 @@ const Main = () => {
                         </p>
 
                     </div>
-
-
                 </div>
 
+                <button
+                    onClick={scrollToElement}
+                    className={s.get_you_bonus_button}>
+                    Get you bonus
+                </button>
 
             </div>
 

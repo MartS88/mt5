@@ -3,19 +3,11 @@ import s from './Header.module.scss'
 import Logo from "./logo/Logo";
 import {useMediaQuery} from "react-responsive";
 import MobileLogo from "./mobilelogo/MobileLogo";
-
+import {scrollToElement} from "../utils/scrollUtils";
 
 const Header = () => {
 
     const isMobile = useMediaQuery({maxWidth: 765});
-
-    const scrollToElement = () => {
-        const element = document.getElementById('scrollTarget');
-        element.scrollIntoView({
-            behavior: 'smooth'
-        });
-    }
-
     const [sliderValue, setSliderValue] = useState(250);
     const [profit, setProfit] = useState(312)
     const handleChange = (e) => {
@@ -38,7 +30,6 @@ const Header = () => {
             <div className={s.header_menu_block}>
 
                 {!isMobile ? <Logo/> : <MobileLogo/>}
-
 
                 <div className={s.button_block}>
                     <button
@@ -63,7 +54,7 @@ const Header = () => {
                     <button
                         onClick={scrollToElement}
                         className={s.get_you_bonus_button}>
-                       Get you bonus
+                        Get you bonus
                     </button>
                 </div>
 

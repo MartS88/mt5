@@ -16,6 +16,7 @@
 body {
   overflow-x: hidden;
   background: #171E27;
+
 }
 .container {
   margin: 0 auto;
@@ -99,16 +100,19 @@ body {
     overflow-x: hidden;
   }
 
+
+  .container {
+    overflow-x: hidden;
+    width: 100%;
+    padding: 0;
+  }
   .wrapper, {
     overflow-x: hidden;
     margin: 0 auto;
     width: 100%;
+    padding: 0px 16px 0px 16px;
   }
-  .container {
-    overflow-x: hidden;
-    width: 100%;
-  }
-;
+
 }
 
 

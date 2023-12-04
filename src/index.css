@@ -69,14 +69,16 @@ body {
   body {
     overflow-x: hidden;
   }
+  .container {
+    overflow-x: hidden;
+    width: 100%;
+    padding: 0;
+  }
   .wrapper {
     overflow-x: hidden;
     margin: 0 auto;
     width: 100%;
-  }
-  .container {
-    overflow-x: hidden;
-    width: 100%;
+    padding: 0px 16px 0px 16px;
   }
 }
 

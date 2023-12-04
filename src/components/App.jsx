@@ -9,7 +9,6 @@ const App = () => {
 
 
     return (
-        <div>
 
 
         <div className='container'>
@@ -25,7 +24,7 @@ const App = () => {
 
 
 
-        </div>
+
     );
 };
 

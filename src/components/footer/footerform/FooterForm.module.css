@@ -12,7 +12,7 @@ img {
   top: 0;
   position: fixed;
   width: 100%;
-  z-index: 5;
+  z-index: 25;
 }
 
 .form_back {
@@ -25,7 +25,23 @@ img {
   padding: 32px;
   overflow: hidden;
   margin-bottom: 120px;
-  z-index: 6;
+  z-index: 20;
+  position: relative;
+}
+.form_back::after {
+  position: absolute;
+  background: url("../../../assets/ellipse510.png") center/cover no-repeat;
+  width: 100%;
+  height: 150%;
+  content: "";
+  top: -20%;
+  left: 0%;
+  border-radius: 32px;
+  transform: rotate(0deg);
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 32px;
+  background-clip: content-box;
 }
 .form_back img {
   margin-top: auto;
@@ -136,12 +152,6 @@ img {
   border: none;
 }
 
-.img_div {
-  display: flex;
-  flex-direction: column;
-  justify-content: ce;
-}
-
 span {
   font-family: "Roboto";
   font-weight: 500;
@@ -186,8 +196,23 @@ span {
     margin-bottom: 0px;
     background: linear-gradient(20.52deg, #070708 0.72%, #2A1F02 30.58%, #070708 58.64%);
   }
+  .form_back::after {
+    position: absolute;
+    background: url("../../../assets/ellipse510.png") center/cover no-repeat;
+    width: 100%;
+    height: 150%;
+    content: "";
+    top: -50%;
+    left: 0%;
+    border-radius: 32px;
+    transform: rotate(0deg);
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 32px;
+    background-clip: content-box;
+  }
   .form_back form {
-    height: 800px;
+    height: auto;
     padding-left: 16px;
     width: 296px;
     display: flex;
@@ -206,8 +231,8 @@ span {
     line-height: 40px;
     letter-spacing: 0.4px;
     color: #FFFFFF;
-    margin-bottom: 40px;
-    text-align: center;
+    margin-bottom: 20px;
+    text-align: start;
   }
   .form_back form .inputs_block {
     width: 296px;
@@ -221,7 +246,7 @@ span {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0px;
+    gap: 5px;
   }
   .form_back form .inputs_block .name_group input, .form_back form .inputs_block .phone_group input {
     width: 296px;
@@ -310,7 +335,7 @@ span {
   }
   .safe {
     margin-top: auto;
-    transform: translateX(5%);
+    transform: translate(5%, 5%);
   }
 }
 
