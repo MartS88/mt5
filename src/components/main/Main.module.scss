@@ -250,6 +250,8 @@ main {
       background: radial-gradient(96.31% 1246.74% at 97.29% 4.76%, #1F2731 0%, rgba(144, 19, 188, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
       linear-gradient(143.51deg, rgba(221, 221, 221, 0.22) 16.75%, rgba(0, 0, 0, 0) 46.78%, rgba(221, 221, 221, 0.22) 78.74%);
       border-radius: 32px;
+      border: 1px solid #DDDDDD38;
+
 
       .withdraw_about_block {
         width: 348px;

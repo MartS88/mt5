@@ -220,6 +220,7 @@ main .withdraw_bonus_block .withdraw_bonus_wrapped {
   gap: 80px;
   background: radial-gradient(96.31% 1246.74% at 97.29% 4.76%, #1F2731 0%, rgba(144, 19, 188, 0) 100%), linear-gradient(143.51deg, rgba(221, 221, 221, 0.22) 16.75%, rgba(0, 0, 0, 0) 46.78%, rgba(221, 221, 221, 0.22) 78.74%);
   border-radius: 32px;
+  border: 1px solid rgba(221, 221, 221, 0.2196078431);
 }
 main .withdraw_bonus_block .withdraw_bonus_wrapped .withdraw_about_block {
   width: 348px;
