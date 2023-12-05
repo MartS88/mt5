@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import s from './Main.module.scss'
 import {useMediaQuery} from "react-responsive";
 import {scrollToElement} from "../utils/scrollUtils";
@@ -11,7 +11,6 @@ const Main = () => {
     const handleChange = (e) => {
         const value = parseInt(e.target.value, 10);
         setSliderValue(value);
-        setProfit(Math.floor(value * 3))
     };
 
     const calculateBackgroundColor = () => {
@@ -20,6 +19,18 @@ const Main = () => {
         return {background: color};
 
     };
+
+    const [activeItem, setActiveItem] = useState(200)
+    const [activeItemValue, setActiveItemValue] = useState(0.25)
+    const handleItemClick = (item) => {
+        setActiveItem(item)
+        setActiveItemValue(item === 200 ? 0.25 : 0.3);
+    };
+
+    useEffect(() => {
+        setProfit(Math.floor(sliderValue * activeItemValue));
+    }, [sliderValue, activeItemValue]);
+
 
     return (
         <main>
@@ -107,19 +118,28 @@ const Main = () => {
                                 <span className={s.bonus_size_title}>Bonus Size</span>
 
                                 <div className={s.bonus_items}>
-                                    <span className={s.bonus_item}>
+
+                                    <span className={`${s.bonus_item} ${activeItem === 200 ? s.active : ''}`}
+                                          onClick={() => handleItemClick(200)}
+                                    >
                                         200%
                                     </span>
 
-                                    <span className={s.bonus_item}>
+                                    <span className={`${s.bonus_item} ${activeItem === 100 ? s.active : ''}`}
+                                          onClick={() => handleItemClick(100)}
+                                    >
                                         100%
                                     </span>
 
-                                    <span className={s.bonus_item}>
+                                    <span className={`${s.bonus_item} ${activeItem === 50 ? s.active : ''}`}
+                                          onClick={() => handleItemClick(50)}
+                                    >
                                         50%
                                     </span>
 
-                                    <span className={s.bonus_item}>
+                                    <span className={`${s.bonus_item} ${activeItem === 25 ? s.active : ''}`}
+                                          onClick={() => handleItemClick(25)}
+                                    >
                                         25%
                                     </span>
                                 </div>
@@ -130,7 +150,7 @@ const Main = () => {
                     <div className={s.withdraw_about_block}>
 
                         <span className={s.withdraw_about_block_span}>
-                        116.50 lots before withdrawal
+                       {profit} lots before withdrawal
                         </span>
 
                         <p className={s.withdraw_about_block_p}>

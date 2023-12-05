@@ -153,7 +153,7 @@ main .withdraw_bonus_block::before {
 main .withdraw_bonus_block::after {
   position: absolute;
   background: url("../../assets/ellipse509.png") center/cover no-repeat;
-  width: 100%;
+  width: 30%;
   height: 61%;
   content: "";
   top: 19%;
@@ -288,9 +288,8 @@ main .withdraw_bonus_block .withdraw_bonus_wrapped .bonus_size .bonus_items .bon
   align-items: center;
   color: #FFFFFF;
   position: relative;
-}
-main .withdraw_bonus_block .withdraw_bonus_wrapped .bonus_size .bonus_items .bonus_item:first-child {
-  border: 2px solid #8A24F3;
+  cursor: pointer;
+  transition: 0.1s all ease;
 }
 main .withdraw_bonus_block .withdraw_bonus_wrapped .bonus_size .bonus_items .bonus_item:first-child::before {
   content: "BESTELLER";
@@ -306,6 +305,9 @@ main .withdraw_bonus_block .withdraw_bonus_wrapped .bonus_size .bonus_items .bon
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.5px;
+}
+main .withdraw_bonus_block .withdraw_bonus_wrapped .bonus_size .bonus_items .active {
+  border: 2px solid #8A24F3;
 }
 main .withdraw_bonus_block .withdraw_bonus_wrapped .withdraw_bonus_div {
   width: 710px;
