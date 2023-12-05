@@ -138,8 +138,8 @@ main .withdraw_bonus_block {
 main .withdraw_bonus_block::before {
   position: absolute;
   background: url("../../assets/ellipse508.png") center/cover no-repeat;
-  width: 114%;
-  height: 117.2%;
+  width: 110.1%;
+  height: 117%;
   content: "";
   top: -139.5%;
   left: -10%;
@@ -197,7 +197,7 @@ main .withdraw_bonus_block .you_invest {
   justify-content: space-between;
 }
 main .withdraw_bonus_block .you_invest .mid_block_div_investment {
-  transform: translateY(50%);
+  transform: translateY(0%);
   font-family: "Prompt";
   font-weight: 500;
   font-size: 24px;
@@ -215,10 +215,10 @@ main .withdraw_bonus_block .you_invest .mid_block_div_investment2 {
   color: #FFFFFF;
 }
 main .withdraw_bonus_block .withdraw_bonus_wrapped {
-  width: 100%;
+  width: 1180px;
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 80px;
   background: radial-gradient(96.31% 1246.74% at 97.29% 4.76%, #1F2731 0%, rgba(144, 19, 188, 0) 100%), linear-gradient(143.51deg, rgba(221, 221, 221, 0.22) 16.75%, rgba(0, 0, 0, 0) 46.78%, rgba(221, 221, 221, 0.22) 78.74%);
   border-radius: 32px;
 }
