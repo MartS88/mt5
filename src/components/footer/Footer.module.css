@@ -7,11 +7,11 @@ footer {
 footer::after {
   position: absolute;
   background: url("../../assets/ellipse510.png") center/cover no-repeat;
-  width: 101%;
-  height: 53%;
+  width: 120.1%;
+  height: 50.5%;
   content: "";
-  top: -58%;
-  left: -0.6%;
+  top: -57.5%;
+  left: -20%;
   border-radius: 32px;
   transform: rotate(0deg);
   z-index: -1;

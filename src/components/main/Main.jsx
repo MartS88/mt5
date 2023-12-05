@@ -7,7 +7,7 @@ const Main = () => {
 
     const isMobile = useMediaQuery({maxWidth: 765});
     const [sliderValue, setSliderValue] = useState(250);
-    const [profit, setProfit] = useState(312)
+    const [profit, setProfit] = useState(250)
     const handleChange = (e) => {
         const value = parseInt(e.target.value, 10);
         setSliderValue(value);
