@@ -742,9 +742,7 @@ main {
             color: #FFFFFF;
             position: relative;
 
-            &:first-child {
-              border: 2px solid #8A24F3;
-            }
+
 
             &:first-child::before {
               content: 'BESTELLER';

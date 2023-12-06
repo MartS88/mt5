@@ -640,9 +640,6 @@ main .withdraw_bonus_block .withdraw_bonus_wrapped .withdraw_bonus_div .withdraw
     color: #FFFFFF;
     position: relative;
   }
-  .withdraw_bonus_block .withdraw_bonus_wrapped .bonus_size .bonus_items .bonus_item:first-child {
-    border: 2px solid #8A24F3;
-  }
   .withdraw_bonus_block .withdraw_bonus_wrapped .bonus_size .bonus_items .bonus_item:first-child::before {
     content: "BESTELLER";
     position: absolute;
