@@ -137,11 +137,11 @@ main .withdraw_bonus_block {
 main .withdraw_bonus_block::before {
   position: absolute;
   background: url("../../assets/ellipse508.png") center/cover no-repeat;
-  width: 110.1%;
-  height: 117%;
+  width: 112%;
+  height: 115.6%;
   content: "";
-  top: -139.5%;
-  left: -10%;
+  top: -138.5%;
+  left: -11.9%;
   border-radius: 32px;
   transform: rotate(0deg);
   z-index: -1;
