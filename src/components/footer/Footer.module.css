@@ -7,10 +7,10 @@ footer {
 footer::after {
   position: absolute;
   background: url("../../assets/ellipse510.png") center/cover no-repeat;
-  width: 120.1%;
-  height: 50%;
+  width: 121.1%;
+  height: 52%;
   content: "";
-  top: -57.1%;
+  top: -58%;
   left: -20%;
   border-radius: 32px;
   transform: rotate(0deg);
@@ -29,14 +29,29 @@ footer::after {
     padding: 0;
     gap: 40px;
   }
+  footer::before {
+    position: absolute;
+    background: url("../../assets/ellipse510.png") center/cover no-repeat;
+    width: 150.1%;
+    height: 200%;
+    content: "";
+    top: -200%;
+    left: -30%;
+    border-radius: 32px;
+    transform: rotate(0deg);
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 32px;
+    background-clip: content-box;
+  }
   footer::after {
     position: absolute;
     background: url("../../assets/ellipse510.png") center/cover no-repeat;
-    width: 120.1%;
-    height: 120%;
+    width: 150.1%;
+    height: 150%;
     content: "";
-    top: -110%;
-    left: -22%;
+    top: -100%;
+    left: -30%;
     border-radius: 32px;
     transform: rotate(0deg);
     z-index: -1;

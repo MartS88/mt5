@@ -137,11 +137,11 @@ main .withdraw_bonus_block {
 main .withdraw_bonus_block::before {
   position: absolute;
   background: url("../../assets/ellipse508.png") center/cover no-repeat;
-  width: 112%;
-  height: 115.6%;
+  width: 121%;
+  height: 120%;
   content: "";
-  top: -138.5%;
-  left: -11.9%;
+  top: -140%;
+  left: -20%;
   border-radius: 32px;
   transform: rotate(0deg);
   z-index: -1;
@@ -500,14 +500,14 @@ main .withdraw_bonus_block .withdraw_bonus_wrapped .withdraw_bonus_div .withdraw
   .withdraw_bonus_block::before {
     position: absolute;
     background: url("../../assets/ellipse508.png") center/cover no-repeat;
-    width: 150% !important;
-    height: 100% !important;
+    width: 200% !important;
+    height: 220% !important;
     content: "";
-    top: -141.5% !important;
-    left: -54.3% !important;
+    top: -133.8% !important;
+    left: -90.3% !important;
     border-radius: 32px;
     transform: rotate(0deg);
-    z-index: -1;
+    z-index: -12;
     pointer-events: none;
     border-radius: 32px;
     background-clip: content-box;
