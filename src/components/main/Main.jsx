@@ -94,7 +94,7 @@ const Main = () => {
 
                             <span className={s.mid_block_div_investment}>Deposit amount</span>
 
-                            <span className={s.mid_block_div_investment}>${sliderValue}</span>
+                            <span className={s.mid_block_div_investment}>${sliderValue.toLocaleString()}</span>
 
                         </div>
                         <div className={s.withdraw_line}>

@@ -159,7 +159,6 @@ main {
 
 
     &::after {
-
       position: absolute;
       background: url('../../assets/ellipse509.png') center/cover no-repeat;
       width: 98.5%;
@@ -416,14 +415,50 @@ main {
 
 @media screen and (max-width: 767px) {
   main {
+
     gap: 40px;
     height: auto;
     margin-bottom: 0px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     .main_icons_block {
       height: auto;
       margin-bottom: 40px;
+      position: relative;
+
+
+      &::after {
+        position: absolute;
+        background: url('../../assets/ellipse509.png') center/cover no-repeat;
+        width: 200%;
+        height: 100%;
+        content: '';
+        top: -10.2%;
+        left: -20%;
+        border-radius: 32px;
+        transform: rotate(0deg);
+        z-index: -2;
+        pointer-events: none;
+        border-radius: 32px;
+        background-clip: content-box;
+      }
+      &::before {
+        position: absolute;
+        background: url('../../assets/ellipse508.png') center/cover no-repeat;
+        width: 200%;
+        height:100%;
+        content: '';
+        top: 50.2%;
+        left: -10%;
+        border-radius: 32px;
+        transform: rotate(0deg);
+        z-index: -2;
+        pointer-events: none;
+        border-radius: 32px;
+        background-clip: content-box;
+      }
 
       h3 {
         width: 360px;
@@ -568,7 +603,7 @@ main {
       height: 150%;
       content: '';
       top: -151.2%;
-      left: -90%;
+      left: -0%;
       border-radius: 32px;
       transform: rotate(0deg);
       z-index: -12;
@@ -580,12 +615,12 @@ main {
     &::after {
 
       position: absolute;
-      background: url('../../assets/ellipse509.png') center/cover no-repeat;
-      width:200%!important;;
-      height:200%!important;
+      background: url('../../assets/ellipse512.png') center/cover no-repeat;
+      width:100%!important;;
+      height:95%!important;
       content: '';
-      top:-20%!important;
-      left: -10%!important;
+      top:2%!important;
+      left: 2.5%!important;
       border-radius: 32px;
       transform: rotate(0deg);
       z-index: -1;
@@ -609,22 +644,22 @@ main {
       margin-bottom: 20px;
       width:340px!important;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-between!important;
       align-items: center;
 
 
       .mid_block_div_investment {
-
-        width: 125px!important;
+        width: 130px!important;
         transform: translateY(0%)!important;
         font-family: 'Prompt';
         font-weight: 500;
-        font-size: 16px;
+        font-size: 16px!important;
         line-height: 24px;
         text-align: start!important;
         color: #FFFFFF;
 
         &:last-child {
+        max-width: 110px!important;
 
         }
       }

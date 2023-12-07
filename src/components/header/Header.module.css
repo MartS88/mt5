@@ -154,9 +154,9 @@ header .line_block::before {
   position: absolute;
   background: url("../../assets/ellipse508.png") center/cover no-repeat;
   width: 100%;
-  height: 150%;
+  height: 54%;
   content: "";
-  top: 0;
+  top: 0%;
   left: 50%;
   transform: translate(0%, 0%);
   pointer-events: none;
@@ -165,11 +165,11 @@ header .line_block::before {
 header .line_block::after {
   position: absolute;
   background: url("../../assets/ellipse509.png") center/cover no-repeat;
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  height: 50%;
   content: "";
-  top: 0%;
-  left: 0%;
+  top: 10%;
+  left: -50%;
   transform: translate(0%, 0%);
   pointer-events: none;
   z-index: -1;
@@ -181,7 +181,6 @@ header .line_block .line_up_block {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  position: relative;
 }
 header .line_block .line_up_block .line_up_block_title {
   width: 449px;
@@ -342,6 +341,58 @@ header .line_block .line_mid_block_wrapped .line_mid_block .you_invest .mid_bloc
   color: #8A24F3;
 }
 
+@media screen and (max-width: 2000px) {
+  .line_block::before {
+    position: absolute;
+    background: url("../../assets/ellipse508.png") center/cover no-repeat;
+    width: 1097px;
+    height: 1097px;
+    content: "";
+    top: 175px !important;
+    left: 1340px;
+    transform: translate(0%, 0%);
+    pointer-events: none;
+    z-index: -1;
+  }
+  .line_block::after {
+    position: absolute;
+    background: url("../../assets/ellipse509.png") center/cover no-repeat;
+    width: 1097px;
+    height: 1097px;
+    content: "";
+    top: 956px !important;
+    left: -448px !important;
+    transform: translate(0%, 0%);
+    pointer-events: none;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .line_block::before {
+    position: absolute;
+    background: url("../../assets/ellipse508.png") center/cover no-repeat;
+    width: 1597px !important;
+    height: 1097px;
+    content: "";
+    top: 0;
+    left: 540px !important;
+    transform: translate(0%, 0%);
+    pointer-events: none;
+    z-index: -1;
+  }
+  .line_block::after {
+    position: absolute;
+    background: url("../../assets/ellipse509.png") center/cover no-repeat;
+    width: 1097px;
+    height: 1097px;
+    content: "";
+    top: 0% !important;
+    left: -448px;
+    transform: translate(0%, 0%);
+    pointer-events: none;
+    z-index: -1;
+  }
+}
 @media screen and (max-width: 767px) {
   header {
     padding-top: 16px;
@@ -466,32 +517,32 @@ header .line_block .line_mid_block_wrapped .line_mid_block .you_invest .mid_bloc
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 650px;
+    height: 600px;
     gap: 0px;
     padding: 32px;
-    margin-bottom: 40px;
+    margin-bottom: 40px !important;
     z-index: 20;
     position: relative;
   }
   header .line_block::before {
     position: absolute;
     background: url("../../assets/ellipse508.png") center/cover no-repeat;
-    width: 200%;
-    height: 200%;
+    width: 200% !important;
+    height: 300% !important;
     content: "";
-    top: -53%;
-    left: -50%;
+    top: -110% !important;
+    left: -50% !important;
     pointer-events: none;
     z-index: -1;
   }
   header .line_block::after {
     position: absolute;
     background: url("../../assets/ellipse509.png") center/cover no-repeat;
-    width: 300%;
-    height: 200%;
+    width: 300% !important;
+    height: 200% !important;
     content: "";
-    top: 50%;
-    left: -100%;
+    top: 50% !important;
+    left: -100% !important;
     transform: translate(0%, 0%);
     pointer-events: none;
     z-index: -1;
@@ -528,7 +579,7 @@ header .line_block .line_mid_block_wrapped .line_mid_block .you_invest .mid_bloc
     height: auto;
   }
   header .line_block .line_up_block .get_you_bonus_button {
-    transform: translateY(620%);
+    transform: translateY(530%);
     width: 296px;
     height: 56px;
     border-radius: 16px;
@@ -554,7 +605,7 @@ header .line_block .line_mid_block_wrapped .line_mid_block .you_invest .mid_bloc
   }
   header .line_block .line_mid_block_wrapped .line_mid_block {
     width: 296px;
-    height: 265px;
+    height: 220px;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -563,7 +614,7 @@ header .line_block .line_mid_block_wrapped .line_mid_block .you_invest .mid_bloc
     gap: 20px;
   }
   header .line_block .line_mid_block_wrapped .line_mid_block .investment_line {
-    width: 264px;
+    width: 280px;
     border-radius: 32px;
     display: flex;
     flex-direction: column;
@@ -588,11 +639,11 @@ header .line_block .line_mid_block_wrapped .line_mid_block .you_invest .mid_bloc
   }
   header .line_block .line_mid_block_wrapped .line_mid_block .investment_line .slider {
     transform: translateY(100%);
-    width: 100%;
+    width: 280px;
     -webkit-appearance: none;
     -webkit-transition: 0.2s;
     border-radius: 20px;
-    height: 20px;
+    height: 12px;
     background: #8A24F3;
     outline: none;
     position: relative;
@@ -600,32 +651,37 @@ header .line_block .line_mid_block_wrapped .line_mid_block .you_invest .mid_bloc
   header .line_block .line_mid_block_wrapped .line_mid_block .investment_line .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 38px;
-    height: 38px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     background: #FFFFFF;
     transition: 0.1s;
   }
   header .line_block .line_mid_block_wrapped .line_mid_block .investment_line .slider::-moz-range-thumb {
-    width: 38px;
-    height: 38px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     background: #FFFFFF;
     transition: 0.1s;
   }
   header .line_block .line_mid_block_wrapped .line_mid_block .investment_line .slider::-webkit-slider-thumb:hover,
   header .line_block .line_mid_block_wrapped .line_mid_block .investment_line .slider::-webkit-slider-thumb:active {
-    width: 39px;
-    height: 39px;
+    width: 33px;
+    height: 33px;
     cursor: pointer;
   }
   header .line_block .line_mid_block_wrapped .line_mid_block .you_invest {
-    width: 100%;
+    width: 280px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
   }
+  header .line_block .line_mid_block_wrapped .line_mid_block .you_invest:first-child {
+    flex-direction: row;
+  }
   header .line_block .line_mid_block_wrapped .line_mid_block .you_invest .mid_block_div_investment {
+    max-width: 135px;
     transform: translateY(50%);
     font-family: "Prompt";
     font-weight: 500;
@@ -635,7 +691,7 @@ header .line_block .line_mid_block_wrapped .line_mid_block .you_invest .mid_bloc
     color: #FFFFFF;
   }
   header .line_block .line_mid_block_wrapped .line_mid_block .you_invest .mid_block_div_investment2 {
-    width: 264px;
+    width: 280px;
     font-family: "Prompt";
     font-weight: 500;
     font-size: 16px;
@@ -651,6 +707,7 @@ header .line_block .line_mid_block_wrapped .line_mid_block .you_invest .mid_bloc
     text-align: start;
   }
   header .line_block .line_mid_block_wrapped .line_mid_block .you_invest .mid_block_div_investment3 {
+    width: 280px;
     justify-content: flex-end;
     display: flex;
     align-items: center;

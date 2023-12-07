@@ -147,7 +147,7 @@ const Header = () => {
                             />
                             <div className={s.slider_prices}>
                                 <span className={s.slider_price}>$250</span>
-                                <span className={s.slider_price}>$25000</span>
+                                <span className={s.slider_price}>$25.000</span>
                             </div>
 
                             <div className={s.you_invest}>
