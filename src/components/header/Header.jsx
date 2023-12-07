@@ -42,6 +42,7 @@ const Header = () => {
 
             <div className={s.header_block_wrapped}>
 
+                <div className={s.headear_wrapped_up_block_div}>
                 <div className={s.header_wrapped_up_block}>
                     <h1 className={s.header_title}>
                         Up to 200% deposit bonus
@@ -57,6 +58,15 @@ const Header = () => {
                         Get you bonus
                     </button>
                 </div>
+
+
+                        <img src={require('../../assets/background.png')} draggable={false} className={s.background}/>
+
+
+
+
+                </div>
+
 
                 <div className={s.header_wrapped_down_block}>
                     <div className={s.wrapped_down_vector_block}>

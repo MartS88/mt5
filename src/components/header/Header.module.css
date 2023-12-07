@@ -8,25 +8,12 @@ header {
   align-items: center;
   gap: 40px;
 }
-header::after {
-  position: absolute;
-  background: url("../../assets/background.png") center/cover no-repeat;
-  width: 703px;
-  height: 600px;
-  content: "";
-  top: 0;
-  left: 55%;
-  transform: translate(-50%, 30%);
-  pointer-events: none;
-  z-index: 1;
-}
 header .header_menu_block {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 40px;
-  margin-bottom: 120px;
   z-index: 10;
 }
 header .header_menu_block .button_block {
@@ -57,15 +44,28 @@ header .header_menu_block .button_block .open_account {
 }
 header .header_block_wrapped {
   width: 100%;
-  height: 574px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 }
-header .header_block_wrapped .header_wrapped_up_block {
+header .header_block_wrapped .headear_wrapped_up_block_div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+header .header_block_wrapped .headear_wrapped_up_block_div .background {
+  margin: 0;
+  transform: translate(0, 0);
+  width: 703px;
+  height: 596px;
+}
+header .header_block_wrapped .headear_wrapped_up_block_div .header_wrapped_up_block {
   width: 100%;
   height: 296px;
   display: flex;
@@ -74,14 +74,14 @@ header .header_block_wrapped .header_wrapped_up_block {
   align-items: flex-start;
   gap: 40px;
 }
-header .header_block_wrapped .header_wrapped_up_block .header_title {
-  width: 580px;
+header .header_block_wrapped .headear_wrapped_up_block_div .header_wrapped_up_block .header_title {
+  width: 480px;
   font-family: "Prompt";
   font-size: 48px;
   line-height: 62px;
   color: #FFFFFF;
 }
-header .header_block_wrapped .header_wrapped_up_block .header_about {
+header .header_block_wrapped .headear_wrapped_up_block_div .header_wrapped_up_block .header_about {
   width: 429px;
   font-family: "Roboto";
   font-weight: 400;
@@ -91,7 +91,7 @@ header .header_block_wrapped .header_wrapped_up_block .header_about {
   color: #919CA2;
   text-align: start;
 }
-header .header_block_wrapped .header_wrapped_up_block .get_you_bonus_button {
+header .header_block_wrapped .headear_wrapped_up_block_div .header_wrapped_up_block .get_you_bonus_button {
   width: 180px;
   height: 56px;
   border-radius: 16px;
@@ -153,11 +153,23 @@ header .line_block {
 header .line_block::before {
   position: absolute;
   background: url("../../assets/ellipse508.png") center/cover no-repeat;
-  width: 90%;
-  height: 100%;
+  width: 100%;
+  height: 150%;
   content: "";
   top: 0;
   left: 50%;
+  transform: translate(0%, 0%);
+  pointer-events: none;
+  z-index: -1;
+}
+header .line_block::after {
+  position: absolute;
+  background: url("../../assets/ellipse509.png") center/cover no-repeat;
+  width: 50%;
+  height: 100%;
+  content: "";
+  top: 0%;
+  left: 0%;
   transform: translate(0%, 0%);
   pointer-events: none;
   z-index: -1;
@@ -330,22 +342,6 @@ header .line_block .line_mid_block_wrapped .line_mid_block .you_invest .mid_bloc
   color: #8A24F3;
 }
 
-@media screen and (max-width: 2000px) {
-  header {
-    position: relative;
-  }
-  header::after {
-    position: absolute;
-    background: url("../../assets/background.png") center/cover no-repeat;
-    width: 703px;
-    height: 600px;
-    content: "";
-    top: 0;
-    left: 60%;
-    transform: translate(-30%, 30%);
-    z-index: 1;
-  }
-}
 @media screen and (max-width: 767px) {
   header {
     padding-top: 16px;
@@ -355,18 +351,6 @@ header .line_block .line_mid_block_wrapped .line_mid_block .you_invest .mid_bloc
     justify-content: center;
     align-items: center;
     gap: 40px;
-  }
-  header::after {
-    position: absolute;
-    background: url("../../assets/mobile_background.png") center/cover no-repeat;
-    width: 355px;
-    height: 301px;
-    content: "";
-    top: 18%;
-    left: 50%;
-    transform: translate(-50%, 20%);
-    z-index: 1;
-    pointer-events: none;
   }
   header .header_menu_block {
     width: 328px;
@@ -378,7 +362,7 @@ header .line_block .line_mid_block_wrapped .line_mid_block .you_invest .mid_bloc
     margin-bottom: 0px;
   }
   header .header_block_wrapped {
-    width: 320px;
+    width: 360px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -388,16 +372,27 @@ header .line_block .line_mid_block_wrapped .line_mid_block .you_invest .mid_bloc
     border-radius: 20px;
     margin-bottom: 40px;
   }
-  header .header_block_wrapped .header_wrapped_up_block {
+  header .header_block_wrapped .headear_wrapped_up_block_div {
+    width: 360px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .header_block_wrapped .headear_wrapped_up_block_div .background {
+    margin: 0;
+    transform: translate(0, -10%);
+    width: 355px;
+    height: 300px;
+  }
+  header .header_block_wrapped .headear_wrapped_up_block_div .header_wrapped_up_block {
     width: 328px;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 40px;
   }
-  header .header_block_wrapped .header_wrapped_up_block .header_title {
+  header .header_block_wrapped .headear_wrapped_up_block_div .header_wrapped_up_block .header_title {
     width: 310px;
     font-family: "Prompt";
     font-size: 32px;
@@ -405,7 +400,7 @@ header .line_block .line_mid_block_wrapped .line_mid_block .you_invest .mid_bloc
     color: #FFFFFF;
     text-align: center;
   }
-  header .header_block_wrapped .header_wrapped_up_block .header_about {
+  header .header_block_wrapped .headear_wrapped_up_block_div .header_wrapped_up_block .header_about {
     width: 328px;
     font-family: "Roboto";
     font-weight: 400;
@@ -416,7 +411,7 @@ header .line_block .line_mid_block_wrapped .line_mid_block .you_invest .mid_bloc
     text-align: center;
     z-index: 10;
   }
-  header .header_block_wrapped .header_wrapped_up_block .get_you_bonus_button {
+  header .header_block_wrapped .headear_wrapped_up_block_div .header_wrapped_up_block .get_you_bonus_button {
     width: 180px;
     height: 56px;
     border-radius: 16px;
@@ -481,12 +476,23 @@ header .line_block .line_mid_block_wrapped .line_mid_block .you_invest .mid_bloc
   header .line_block::before {
     position: absolute;
     background: url("../../assets/ellipse508.png") center/cover no-repeat;
-    width: 1097px;
-    height: 1000px;
+    width: 200%;
+    height: 200%;
     content: "";
-    top: -12.5%;
-    left: -150%;
-    transform: rotate(0deg);
+    top: -53%;
+    left: -50%;
+    pointer-events: none;
+    z-index: -1;
+  }
+  header .line_block::after {
+    position: absolute;
+    background: url("../../assets/ellipse509.png") center/cover no-repeat;
+    width: 300%;
+    height: 200%;
+    content: "";
+    top: 50%;
+    left: -100%;
+    transform: translate(0%, 0%);
     pointer-events: none;
     z-index: -1;
   }
