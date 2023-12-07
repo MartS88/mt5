@@ -348,7 +348,7 @@ header .line_block .line_mid_block_wrapped .line_mid_block .you_invest .mid_bloc
     width: 1097px;
     height: 1097px;
     content: "";
-    top: 175px !important;
+    top: 0 px !important;
     left: 1340px;
     transform: translate(0%, 0%);
     pointer-events: none;
