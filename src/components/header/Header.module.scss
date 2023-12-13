@@ -412,8 +412,7 @@ header {
       width: 1097px;
       height:1097px;
       content: '';
-      top: 0
-      px!important;
+      top: 0px!important;
       left: 1340px;
       transform: translate(0%, 0%);
       pointer-events: none;
@@ -479,6 +478,7 @@ header {
     gap: 40px;
 
 
+
     .header_menu_block {
       width: 328px;
       height: auto;
@@ -501,11 +501,12 @@ header {
       height: auto;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
+      justify-content: center;
+      align-items: center;
       overflow: hidden;
       border-radius: 20px;
       margin-bottom: 40px;
+
 
       .headear_wrapped_up_block_div {
         width: 360px;
@@ -573,18 +574,19 @@ header {
       }
 
       .header_wrapped_down_block {
-        width: 360px;
+        width: 328px;
         height: auto;
         padding: 32px;
-        border-radius: 32px;
-        border: 1px solid;
-        border-image-source: linear-gradient(143.51deg, rgba(221, 221, 221, 0.22) 16.75%, rgba(0, 0, 0, 0) 46.78%, rgba(221, 221, 221, 0.22) 78.74%);
+        border-radius: 20px;
+        border: 1px solid #DDDDDD38;
         background: linear-gradient(143.51deg, rgba(221, 221, 221, 0.22) 16.75%, rgba(0, 0, 0, 0) 46.78%, rgba(221, 221, 221, 0.22) 78.74%);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
         gap: 20px;
+        background: transparent;
+
 
 
         .wrapped_down_vector_block {
@@ -619,29 +621,30 @@ header {
       gap: 0px;
       padding: 32px;
       margin-bottom: 40px!important;
-      z-index: 20;
+      z-index: 20!important;
       position: relative;
+
 
       &::before {
 
         position: absolute;
-        background: url('../../assets/ellipse508.png') center/cover no-repeat;
-        width: 200%!important;
-        height: 300%!important;
+        background: url('../../assets/ellipse510.png') center/cover no-repeat;
+        width: 100%!important;
+        height: 200%!important;
         content: '';
-        top: -110%!important;
-        left:-50%!important;
+        top: -200%!important;
+        left:2%!important;
         pointer-events: none;
-        z-index: -1;
+
       }
       &::after {
 
         position: absolute;
         background: url('../../assets/ellipse509.png') center/cover no-repeat;
         width: 300%!important;
-        height:200%!important;
+        height:300%!important;
         content: '';
-        top: 50%!important;
+        top: -100%!important;
         left: -100%!important;
         transform: translate(0%, 0%);
         pointer-events: none;
