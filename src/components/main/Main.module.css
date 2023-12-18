@@ -93,21 +93,6 @@ main .start_block .start_block_items {
   gap: 20px;
   position: relative;
 }
-main .start_block .start_block_items::before {
-  position: absolute;
-  background: url("../../assets/ellipse510.png") center/cover no-repeat;
-  width: 200%;
-  height: 100%;
-  content: "";
-  top: 0%;
-  left: 0%;
-  border-radius: 32px;
-  transform: rotate(0deg);
-  z-index: -12;
-  pointer-events: none;
-  border-radius: 32px;
-  background-clip: content-box;
-}
 main .start_block .start_block_items .start_block_item {
   width: 380px;
   height: 608px;
